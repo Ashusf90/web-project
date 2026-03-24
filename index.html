@@ -1,14 +1,115 @@
-# Web Project
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sample Web Project</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      text-align: center;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      margin: 15px auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+
   <script src="app.js"></script>
 </head>
 <body>
-  <h1>Hello World</h1>
-  <!-- TODO: Add more content -->
+
+  <!-- HEADER -->
+  <header>
+    <h1>Welcome to My Web Project </h1>
+    <p>Learning Web Development Step by Step</p>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section>
+    <div class="card">
+      <h2>About This Project</h2>
+      <p>This is a simple web project built using HTML, CSS, and JavaScript.</p>
+      <p>It demonstrates basic frontend concepts like UI, interaction, and DOM manipulation.</p>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE GREETING -->
+  <section>
+    <div class="card">
+      <h2>Try It Yourself</h2>
+      <input type="text" id="name" placeholder="Enter your name">
+      <button onclick="greet()">Greet Me</button>
+      <p id="output"></p>
+    </div>
+  </section>
+
+  <!-- COUNTER FEATURE -->
+  <section>
+    <div class="card">
+      <h2>Counter</h2>
+      <p id="count">0</p>
+      <button onclick="increase()">Increase</button>
+      <button onclick="decrease()">Decrease</button>
+    </div>
+  </section>
+
+  <!-- FEATURES LIST -->
+  <section>
+    <div class="card">
+      <h2>Features</h2>
+      <ul style="list-style:none; padding:0;">
+        <li>✔ Clean UI Design</li>
+        <li>✔ User Input Handling</li>
+        <li>✔ Dynamic Content Update</li>
+        <li>✔ Simple JavaScript Logic</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Made with  by You</p>
+  </footer>
+
 </body>
 </html>
